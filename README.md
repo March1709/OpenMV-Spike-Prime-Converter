@@ -1,10 +1,10 @@
 # OpenMV-Spike-Prime-Converter
-超音波センサのハウジングに取り付けることでOpenMVをSpike Primeで使用可能にする基板とその付属品、およびサンプルプログラム
+超音波センサのハウジングに取り付けることでOpenMVをSpike Primeで使用可能にする基板とその付属品及びサンプルプログラムです。
 
 オープンソースハードウェアとして公開します。ライセンスはCC BY-NC-SA 4.0です。
 + オープンソースハードウェアとは:https://www.oshwa.org/definition/japanese/
 + CC BY-NC-SA 4.0とは:https://creativecommons.jp/licenses/
-# それぞれのファイルについて
+## それぞれのファイルについて
 hardware
 + board.brd:Eagle互換のボードファイル
 + schematic.sch:Eagle互換の回路図ファイル
@@ -14,5 +14,7 @@ hardware
 sample program
 + OpenMV_sample.py:OpenMVから回SPIKE Primeに1秒に１回数字の100を送信する。
 + SPIKE_sample.llsp:SPIKE Primeが受信したデータをコンソールに表示する。
-# 実装方法
+## 実装方法
 実装例はmount_example.stepを参照
+## その他
+質問、問題等があった場合はissuesにお願いします。
