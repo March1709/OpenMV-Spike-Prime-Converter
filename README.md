@@ -1,20 +1,36 @@
 # OpenMV-Spike-Prime-Converter
-超音波センサのハウジングに取り付けることでOpenMVをSpike Primeで使用可能にする基板とその付属品及びサンプルプログラムです。
 
-オープンソースハードウェアとして公開します。ライセンスはCC BY-NC-SA 4.0です。
-+ オープンソースハードウェアとは:https://www.oshwa.org/definition/japanese/
-+ CC BY-NC-SA 4.0とは:https://creativecommons.jp/licenses/
-## それぞれのファイルについて
-ハードウェア
-+ board.brd:Eagle互換のボードファイル
-+ schematic.sch:Eagle互換の回路図ファイル
-+ spacer_FRONT.stl:基板のFRONT側にインサートナットと共に使用する。spacer_BACKと基板本体を固定するパーツ。
-+ spacer_BACK.stl:基板のBACK側に使用する。基板とハウジングの隙間を適切な距離にするパーツ。
+This project includes a circuit board, mounting accessories, and sample programs that enable OpenMV to be used with LEGO SPIKE Prime by attaching the board to the ultrasonic sensor housing.
 
-サンプルプログラム
-+ OpenMV_sample.py:OpenMVから回SPIKE Primeに1秒に１回数字の100を送信する。
-+ SPIKE_sample.llsp:SPIKE Primeが受信したデータをコンソールに表示する。
-## 実装方法
-実装例はmount_example.stepを参照
-## その他
-質問、問題等があった場合はissuesにお願いします。
+The hardware is released as open-source hardware under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.
+
+- [Open Source Hardware Definition](https://www.oshwa.org/definition/)
+- [CC BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/)
+
+## File Descriptions
+
+### Hardware
+
+- **board.brd**: An EAGLE-compatible PCB layout file.
+- **schematic.sch**: An EAGLE-compatible schematic file.
+- **spacer_FRONT**: A spacer used on the front side of the PCB. Insert its protrusions into the outer holes of the PCB, then fix the assembly using the screws that originally held the ultrasonic sensor module in place.
+- **spacer_BACK**: A spacer used on the back side of the PCB. Insert its protrusions into the inner holes of the PCB to set the proper distance between the PCB and the ultrasonic sensor housing.
+
+### Sample Programs
+
+- **OpenMV_sample.py**: Sends the number `100` from OpenMV to SPIKE Prime once per second.
+- **SPIKE_sample.llsp**: Displays the data received by SPIKE Prime in the console.
+
+## Assembly Instructions
+
+Refer to `mount_example.step` for an example of the assembled hardware.
+
+## License
+
+The hardware design files and mounting accessories are licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.
+
+- [CC BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/)
+
+## Questions and Issues
+
+If you have any questions or encounter any problems, please open an issue in the GitHub Issues section.
