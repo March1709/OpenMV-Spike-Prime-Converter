@@ -26,9 +26,10 @@
 <drill diameter="325120" />
 <drill diameter="736000" />
 <drill diameter="960000" />
+<drill diameter="640000" />
 </drillsymbolsettings>
 </settings>
-<grid distance="200" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.000003125" altunitdist="mm" altunit="mm"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.000003125" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -190,12 +191,8 @@
 <wire x1="53.721" y1="20.447" x2="52.451" y2="21.717" width="0" layer="20" curve="90"/>
 <wire x1="9.0805" y1="21.717" x2="9.0805" y2="0" width="0.1524" layer="21"/>
 <wire x1="44.6405" y1="0" x2="44.6405" y2="21.717" width="0.1524" layer="21"/>
-<circle x="3" y="17.907" radius="2.794" width="0.1524" layer="22"/>
-<circle x="3" y="3.81" radius="2.794" width="0.1524" layer="22"/>
 <circle x="3" y="10.8585" radius="3.429" width="0.1524" layer="22"/>
-<circle x="50.718596875" y="17.907" radius="2.794" width="0.1524" layer="22"/>
-<circle x="50.718596875" y="3.81" radius="2.794" width="0.1524" layer="22"/>
-<circle x="50.718596875" y="10.8585" radius="3.429" width="0.1524" layer="22"/>
+<circle x="50.721" y="10.8585" radius="3.429" width="0.1524" layer="22"/>
 <text x="0" y="-0.0635" size="0.0254" layer="21" font="vector">/Users/aoiyamanaka/Documents/OpenMV_breakout2023_silk.bmp</text>
 <text x="0" y="-0.0635" size="0.0254" layer="22" font="vector" rot="MR0">/Users/aoiyamanaka/Documents/OpenMV_breakout2023_silk_bottom.bmp</text>
 <text x="0" y="-0.0635" size="0.0254" layer="21" font="vector">/Users/aoiyamanaka/Documents/OpenMV_breakout2023_silk.bmp</text>
@@ -3346,6 +3343,14 @@
 <text x="28.7655" y="17.653" size="0.6096" layer="22" font="custom" fontFamily="UDEV Gothic NF" rot="MR270" align="center-right">NC</text>
 <text x="30.0355" y="17.653" size="0.6096" layer="22" font="custom" fontFamily="UDEV Gothic NF" rot="MR270" align="center-right">NC</text>
 <text x="31.3055" y="17.653" size="0.6096" layer="22" font="custom" fontFamily="UDEV Gothic NF" rot="MR270" align="center-right">NC</text>
+<hole x="3" y="2" drill="2"/>
+<hole x="3" y="5" drill="2"/>
+<hole x="3" y="19.717" drill="2"/>
+<hole x="3" y="16.717" drill="2"/>
+<hole x="50.721" y="2" drill="2"/>
+<hole x="50.721" y="5" drill="2"/>
+<hole x="50.721" y="19.717" drill="2"/>
+<hole x="50.721" y="16.717" drill="2"/>
 </plain>
 <libraries>
 <library name="pinhead_1.27mm" urn="urn:adsk.wipprod:fs.file:vf.noQQeLTrTXeYFGYC_7us9Q">
@@ -3521,15 +3526,6 @@ CONN_08
 </packageinstances>
 </package3d>
 </packages3d>
-</library>
-<library name="holes_small" urn="urn:adsk.wipprod:fs.file:vf.NjlWyMHYQBSQ_xa_wmDfhg">
-<packages>
-<package name="2,3-PAD" library_version="7">
-<pad name="P$1" x="0" y="0" drill="2.3" diameter="4.826"/>
-<circle x="0" y="0" radius="2.794" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="1.27" width="0.1524" layer="21"/>
-</package>
-</packages>
 </library>
 <library name="holes" urn="urn:adsk.eagle:library:237">
 <description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
@@ -3761,19 +3757,11 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CONN-08438" x="42.9895" y="19.7485" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="40.9575" y="21.0185" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="U$3" library="holes_small" library_urn="urn:adsk.wipprod:fs.file:vf.NjlWyMHYQBSQ_xa_wmDfhg" package="2,3-PAD" value="MOUNT-PAD-ROUND" x="3" y="17.907" smashed="yes">
-</element>
-<element name="U$2" library="holes_small" library_urn="urn:adsk.wipprod:fs.file:vf.NjlWyMHYQBSQ_xa_wmDfhg" package="2,3-PAD" value="MOUNT-PAD-ROUND" x="3" y="3.81" smashed="yes">
-</element>
 <element name="H1" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0-PAD" package3d_urn="urn:adsk.eagle:package:14280/1" value="MOUNT-PAD-ROUND3.0" x="3" y="10.8585" locked="yes" smashed="yes">
 <attribute name="POPULARITY" value="17" x="3" y="10.8585" locked="yes" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$4" library="holes_small" library_urn="urn:adsk.wipprod:fs.file:vf.NjlWyMHYQBSQ_xa_wmDfhg" package="2,3-PAD" value="MOUNT-PAD-ROUND" x="50.718596875" y="3.81" smashed="yes">
-</element>
-<element name="U$5" library="holes_small" library_urn="urn:adsk.wipprod:fs.file:vf.NjlWyMHYQBSQ_xa_wmDfhg" package="2,3-PAD" value="MOUNT-PAD-ROUND" x="50.718596875" y="17.907" smashed="yes">
-</element>
-<element name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0-PAD" package3d_urn="urn:adsk.eagle:package:14280/1" value="MOUNT-PAD-ROUND3.0" x="50.718596875" y="10.8585" smashed="yes">
-<attribute name="POPULARITY" value="17" x="42.590596875" y="7.7597" size="1.778" layer="27" display="off"/>
+<element name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0-PAD" package3d_urn="urn:adsk.eagle:package:14280/1" value="MOUNT-PAD-ROUND3.0" x="50.721" y="10.8585" smashed="yes">
+<attribute name="POPULARITY" value="17" x="42.593" y="7.7597" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -3918,7 +3906,7 @@ design rules under a new name.</description>
 <wire x1="24.9555" y1="15.1073625" x2="11.8166375" y2="1.9685" width="0.508" layer="16"/>
 <wire x1="11.8166375" y1="1.9685" x2="10.7315" y2="1.9685" width="0.508" layer="16"/>
 </signal>
-<signal name="N$3">
+<signal name="RX-&gt;TX">
 <contactref element="U$1" pad="P$8"/>
 <contactref element="J3" pad="4"/>
 <wire x1="11.7983" y1="8.5217" x2="10.7315" y2="9.5885" width="0.254" layer="1"/>
@@ -3927,7 +3915,7 @@ design rules under a new name.</description>
 <wire x1="22.8473" y1="15.51635" x2="15.85265" y2="8.5217" width="0.254" layer="1"/>
 <wire x1="15.85265" y1="8.5217" x2="11.7983" y2="8.5217" width="0.254" layer="1"/>
 </signal>
-<signal name="N$4">
+<signal name="TX-&gt;RX">
 <contactref element="U$1" pad="P$7"/>
 <contactref element="J3" pad="3"/>
 <wire x1="11.7983" y1="8.1153" x2="10.7315" y2="7.0485" width="0.254" layer="1"/>

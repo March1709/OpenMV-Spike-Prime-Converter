@@ -1375,51 +1375,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </deviceset>
 </devicesets>
 </library>
-<library name="holes_small" urn="urn:adsk.wipprod:fs.file:vf.NjlWyMHYQBSQ_xa_wmDfhg">
-<packages>
-<package name="2,3-PAD" library_version="7">
-<pad name="P$1" x="0" y="0" drill="2.3" diameter="4.826"/>
-<circle x="0" y="0" radius="2.794" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="1.27" width="0.1524" layer="21"/>
-</package>
-<package name="2,5-PAD" library_version="7">
-<pad name="P$1" x="0" y="0" drill="2.5" diameter="5.08"/>
-<circle x="0" y="0" radius="1.402759375" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="2.923759375" width="0.1524" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="MOUNT-PAD" library_version="4">
-<pin name="P$1" x="-12.7" y="2.54" length="middle"/>
-<circle x="-12.7" y="2.54" radius="1.524" width="0.0508" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MOUNT-PAD-ROUND">
-<gates>
-<gate name="G$1" symbol="MOUNT-PAD" x="-7.62" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="2,3-PAD">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="2,5-PAD" package="2,5-PAD">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="holes" urn="urn:adsk.eagle:library:237">
 <description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -1775,11 +1730,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <part name="U$1" library="pinhead_1.27mm" library_urn="urn:adsk.wipprod:fs.file:vf.noQQeLTrTXeYFGYC_7us9Q" deviceset="1X08" device=""/>
 <part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_08" device="&quot;" package3d_urn="urn:adsk.eagle:package:38138/1"/>
 <part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_08" device="&quot;" package3d_urn="urn:adsk.eagle:package:38138/1"/>
-<part name="U$3" library="holes_small" library_urn="urn:adsk.wipprod:fs.file:vf.NjlWyMHYQBSQ_xa_wmDfhg" deviceset="MOUNT-PAD-ROUND" device=""/>
-<part name="U$2" library="holes_small" library_urn="urn:adsk.wipprod:fs.file:vf.NjlWyMHYQBSQ_xa_wmDfhg" deviceset="MOUNT-PAD-ROUND" device=""/>
 <part name="H1" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.0" package3d_urn="urn:adsk.eagle:package:14280/1"/>
-<part name="U$4" library="holes_small" library_urn="urn:adsk.wipprod:fs.file:vf.NjlWyMHYQBSQ_xa_wmDfhg" deviceset="MOUNT-PAD-ROUND" device=""/>
-<part name="U$5" library="holes_small" library_urn="urn:adsk.wipprod:fs.file:vf.NjlWyMHYQBSQ_xa_wmDfhg" deviceset="MOUNT-PAD-ROUND" device=""/>
 <part name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.0" package3d_urn="urn:adsk.eagle:package:14280/1"/>
 </parts>
 <sheets>
@@ -1796,14 +1747,10 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <attribute name="VALUE" x="25.4" y="13.716" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="25.4" y="-11.938" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="U$3" gate="G$1" x="-45.72" y="8.89" smashed="yes" rot="R180"/>
-<instance part="U$2" gate="G$1" x="-45.72" y="-3.81" smashed="yes" rot="R180"/>
 <instance part="H1" gate="G$1" x="-33.02" y="0" smashed="yes" rot="R180">
 <attribute name="NAME" x="-35.814" y="-0.5842" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-35.814" y="2.4638" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$4" gate="G$1" x="45.72" y="-8.89" smashed="yes"/>
-<instance part="U$5" gate="G$1" x="45.72" y="3.81" smashed="yes"/>
 <instance part="H2" gate="G$1" x="33.02" y="0" smashed="yes">
 <attribute name="NAME" x="35.814" y="0.5842" size="1.778" layer="95"/>
 <attribute name="VALUE" x="35.814" y="-2.4638" size="1.778" layer="96"/>
