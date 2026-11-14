@@ -3326,7 +3326,7 @@
 <text x="0" y="-0.0635" size="0.0254" layer="21" font="vector">/Users/aoiyamanaka/Documents/OpenMV_breakout2023_silk_top.bmp</text>
 <text x="0" y="-0.0635" size="0.0254" layer="22" font="vector" rot="MR0">/Users/aoiyamanaka/Documents/OpenMV_breakout2023_silk_bottom.bmp</text>
 <text x="26.8605" y="5.08" size="0.6096" layer="21" font="custom" fontFamily="UDEV Gothic NF" align="center">GitHub:https://github.com/March1709/OpenMV-Spike-Prime-Converter</text>
-<text x="26.8605" y="4.2164" size="0.6096" layer="21" font="custom" fontFamily="UDEV Gothic NF" align="center">License:CC BY-NC-SA 4.0</text>
+<text x="26.8605" y="4.2164" size="0.6096" layer="21" font="custom" fontFamily="UDEV Gothic NF" align="center">License:CC BY-SA 4.0</text>
 <text x="26.8605" y="10.8585" size="1.4224" layer="22" font="custom" fontFamily="UDEV Gothic NF" rot="MR0" align="center">OpenMV-Spike Prime Converter</text>
 <text x="26.8605" y="9.5885" size="0.6096" layer="22" font="custom" fontFamily="UDEV Gothic NF" rot="MR0" align="center">via ultrasonic sensor</text>
 <text x="46.101" y="10.8585" size="1.778" layer="21" font="custom" fontFamily="UDEV Gothic NF" rot="R270" align="center">FRONT</text>
